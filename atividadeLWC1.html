@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-m-arround_medium">
+    <template for:each={contato} for:item="c">
+        <h1 key={c.cod}> Primeiro nome: {c.primeironome}, sobrenome: {c.sobrenome}</h1> 
+        <p key={c.cod}>Idade: {c.idade}, Email: {c.email} clasificação: {c.classificacao} Empresa: {c.empresa},
+            Receita Anual {c.receitaanual}
+        </p>
+    </template>
+    </div>
+</template>
